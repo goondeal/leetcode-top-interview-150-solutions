@@ -3,8 +3,8 @@ class Solution:
     def removeElement(self, nums, val):
         """
         Algorithm:
-            Traverse the array linearly, if the element has value equals [val],
-            replace it with the next non-val element.
+            Traverse the array linearly.
+            If the element has value equals [val], replace it with the next non-val element.
 
         Time Complexity: O(n)
         Space Complexity: O(1)

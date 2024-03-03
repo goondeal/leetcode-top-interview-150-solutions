@@ -1,6 +1,18 @@
 """[[ EASY ]]"""
+from typing import List
+
+
 class Solution:
-    def majorityElement(self, nums):
+    def majorityElement(self, nums: List[int]) -> int:
+        '''
+        Approach:
+            Using variables [num] to track the majority element, and [c] to track the count of that element.
+            Traverse [nums] elements and increase [c] by one if element equals [num] or decrease [c] by one otherwise.
+            Reassign [num] when [c] equals 0
+        
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+        '''
         c = 1
         num = nums[0]
         for i in range(1, len(nums)):

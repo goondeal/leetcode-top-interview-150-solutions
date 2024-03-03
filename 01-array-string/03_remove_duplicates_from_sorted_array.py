@@ -1,29 +1,35 @@
 """[[ EASY ]]"""
+from typing import List
+
+
 class Solution:
-    def removeDuplicates(self, nums):
+    def removeDuplicates(self, nums: List[int]) -> int:
+        '''
+        Approach:
+            Use 2 pointers i, and j where i is the place to set in the first greater num you face with j.
+            Traverse the [nums] with j till you find a num greater than nums[i], then get it to i+1 index, and move the pointers.
+
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+        '''
         n = len(nums)
-        if n < 3:
+        if n < 2:
             return n
-        end = n
-        prev, current = 0, 2
-        while current < end:
-            if nums[current] == nums[prev]:
-                i, j = current, current+1
-                while j < end:
-                    nums[i], nums[j] = nums[j], nums[i]
-                    i += 1
-                    j += 1
-                end -= 1    
+        
+        i, j = 0, 1
+        # loop till you find an int which is greater than the currrent (nums[i])
+        while j < n:
+            if nums[j] <= nums[i]:
+                j += 1
             else:
-                prev += 1 
-                current += 1
-        return end
+                # When found, replace it in the right order which is [i+1].
+                nums[i+1], nums[j] = nums[j], nums[i+1]
+                i += 1
+        
+        return i + 1
 
 
 if __name__ == '__main__':
-    nums = [1,1,1,2,2,3]
-    nums = [0,0,1,1,1,1,2,3,3]
     s = Solution()
-    result = s.removeDuplicates(nums)
-    print('nums =', nums)
-    print('result =', result)
+    print(s.removeDuplicates([1,1,1,2,2,3])) # 3
+    print(s.removeDuplicates([0,0,1,1,1,1,2,3,3])) # 4

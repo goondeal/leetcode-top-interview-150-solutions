@@ -4,12 +4,12 @@ class Solution(object):
         """
         Do not return anything, modify nums1 in-place instead.
 
-        Algorithm:
-        Since the arrays are sorted, max elements are in the end.
-        So, compare max element in [nums1] with max element in [nums2]
-        set the max of them in the end of allocated spaces (trailing zeros) in nums1.
-        pick the next element to compare.
-        Repeat.
+        Approach:
+            Since the arrays are sorted, max elements are at the end.
+            1) So, compare the max element of [nums1] with the max element of [nums2].
+            2) Set the max of them in the end of allocated spaces (trailing zeros) in nums1.
+            3) pick the next element to compare.
+            4) Repeat.
 
         Time Complexity: O(m+n)
         Space Complexity: O(1)
