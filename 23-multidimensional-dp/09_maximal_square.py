@@ -3,8 +3,6 @@ from typing import List
 
 
 class Solution:
-    # def _get_max_square(self, matrix, i, j):
-
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         n, m = len(matrix), len(matrix[0])
         max_square = 0
