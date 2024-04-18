@@ -1,6 +1,6 @@
 # Leetcode Top Interview 150 [Problems](https://leetcode.com/studyplan/top-interview-150/) (HARD)
 
-Numbered, and Categorized by sections
+Numbered, and Categorized by section
 
 ## [01. Array / String](/01-array-string/)
   ### [15. Candy](/01-array-string/15_candy.py)
