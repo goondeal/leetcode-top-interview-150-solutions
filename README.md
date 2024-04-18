@@ -1,4 +1,4 @@
-# Leetcode Top Interview 150 [Problems](https://leetcode.com/studyplan/top-interview-150/) (EASY)
+# Leetcode Top Interview 150 [Problems](https://leetcode.com/studyplan/top-interview-150/)
 
 Numbered, and Categorized by section
 
