@@ -1,6 +1,6 @@
 # Leetcode Top Interview 150 [Problems](https://leetcode.com/studyplan/top-interview-150/) (Medium)
 
-Numbered, and Categorized by sections
+Numbered, and Categorized by section
 
 ## [01. Array / String](/01-array-string/)
   ### [04. Remove Duplicates from Sorted Array II](/01-array-string/04_remove_duplicates_from_sorted_array_ii.py)
